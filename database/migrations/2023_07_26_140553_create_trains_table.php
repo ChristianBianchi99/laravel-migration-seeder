@@ -21,7 +21,7 @@ return new class extends Migration
             $table->date('Data di Partenza');
             $table->time('Orario di Partenza', 4);
             $table->time('Orario di Arrivo', 4);
-            $table->smallInteger('Codice Treno');
+            $table->smallInteger('Codice Treno')->nullable();
             $table->tinyInteger('Numero Carrozze')->nullable();
             $table->boolean('In Orario')->default(1);
             $table->boolean('Cancellato')->default(0);
