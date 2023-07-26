@@ -87,10 +87,18 @@
                                         {{$train['Numero Carrozze']}}
                                     </td>
                                     <td>
-                                        {{$train['In Orario']}}
+                                        @if ($train['In Orario'] === 1)
+                                            Si
+                                        @else
+                                            No
+                                        @endif
                                     </td>
                                     <td>
-                                        {{$train->Cancellato}}
+                                        @if ($train->Cancellato === 1)
+                                            Si
+                                        @else
+                                            No
+                                        @endif
                                     </td>
                                 </tr>
                             @endforeach
