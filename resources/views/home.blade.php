@@ -22,7 +22,7 @@
             <div class="col">
                 <div class="content">
                     <h1 class="my-3">
-                        Treni in partenza oggi
+                        Treni in partenza il {{date('Y-m-d')}}
                     </h1>
                     <table class="table">
                         <thead>
